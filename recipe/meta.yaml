@@ -1,5 +1,5 @@
 {% set name = "meegkit" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meegkit-{{ version }}.tar.gz
-  sha256: f21808f242325462c13b6c1e3df132361b666c02f1bc251a2eb91cc11e486cda
+  sha256: 5032dfaf10725f22c02bea5f4ec9ef150b0f11e9297eac8c5d56cac87da5d282
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
