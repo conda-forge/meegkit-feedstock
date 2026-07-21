@@ -1,5 +1,5 @@
 {% set name = "meegkit" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/meegkit-{{ version }}.tar.gz
-  sha256: 5032dfaf10725f22c02bea5f4ec9ef150b0f11e9297eac8c5d56cac87da5d282
+  sha256: 0df5783a9b03b23c196c3be36f448be2badd37e00e88e075bf3b2a0e3a0c9397
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ requirements:
     - joblib
     - tqdm
     - statsmodels
-    - pyriemann >=0.2.7
+    - pyriemann >=0.12
 
 test:
   imports:
