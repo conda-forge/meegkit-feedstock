@@ -31,7 +31,7 @@ requirements:
     - joblib
     - tqdm
     - statsmodels
-    - pyriemann >=0.2.7
+    - pyriemann >=0.12
 
 test:
   imports:
